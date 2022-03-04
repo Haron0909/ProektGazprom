@@ -1,0 +1,23 @@
+﻿<Page x:Class="WpfApp1.AddReport"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d"
+      Title="AddReport" Height="470.845" Width="853.951">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="16*"/>
+            <RowDefinition Height="455*"/>
+        </Grid.RowDefinitions>
+        <ComboBox Name="ChoiceProtocol" HorizontalAlignment="Left" Height="26" Margin="10,37,0,0" VerticalAlignment="Top" Width="335" Grid.Row="1" SelectionChanged="ChoiceProtocol_SelectionChanged"/>
+        <Label Content="Выберте протокол" HorizontalAlignment="Left" Height="29" Margin="6,0,0,0" VerticalAlignment="Top" Width="267" Grid.Row="1"/>
+        <ComboBox Name="ChoiceAssign" HorizontalAlignment="Left" Height="26" Margin="391,37,0,0" Grid.Row="1" VerticalAlignment="Top" Width="453"/>
+        <Label Content="Выберете поручение" HorizontalAlignment="Left" Height="27" Margin="391,5,0,0" Grid.Row="1" VerticalAlignment="Top" Width="310"/>
+        <Button x:Name="AddReportButton"  Content="Отправить отчёт" HorizontalAlignment="Left" Margin="0,407,0,0" Grid.Row="1" VerticalAlignment="Top" Width="854" Height="48" Click="AddReportButton_Click"/>
+        <TextBox x:Name="ReportField" HorizontalAlignment="Left" Height="321" Margin="6,81,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Поле для отёта" VerticalAlignment="Top" Width="848"/>
+
+    </Grid>
+</Page>
